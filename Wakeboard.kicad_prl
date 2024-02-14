@@ -1,7 +1,7 @@
 {
   "board": {
-    "active_layer": 44,
-    "active_layer_preset": "All Layers",
+    "active_layer": 37,
+    "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
@@ -11,8 +11,8 @@
       "images": 0.6,
       "pads": 1.0,
       "tracks": 1.0,
-      "vias": 1.0,
-      "zones": 0.6
+      "vias": 0.6800000071525574,
+      "zones": 0.8600000143051147
     },
     "selection_filter": {
       "dimensions": true,
@@ -34,7 +34,6 @@
       3,
       4,
       5,
-      8,
       9,
       10,
       11,
@@ -61,10 +60,9 @@
       34,
       35,
       36,
-      39,
       40
     ],
-    "visible_layers": "fffffff_ffffffff",
+    "visible_layers": "fffffec_7ffffffe",
     "zone_display_mode": 0
   },
   "git": {
@@ -74,7 +72,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "Washingboard.kicad_prl",
+    "filename": "Wakeboard.kicad_prl",
     "version": 3
   },
   "project": {

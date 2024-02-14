@@ -5,6 +5,108 @@
 	(uuid "5eaee857-86a0-4093-a821-4f3b8843739e")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector:USB_C_Receptacle_USB2.0_14P"
 			(pin_names
 				(offset 1.016)
@@ -4671,6 +4773,12 @@
 		(uuid "3f18d347-103e-4c76-a6dd-5ca39adb16ea")
 	)
 	(junction
+		(at 259.08 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4077416e-17a3-4089-88bd-72974c2cc490")
+	)
+	(junction
 		(at 123.19 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4705,6 +4813,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "549b392f-644a-4487-b890-06ac26320a18")
+	)
+	(junction
+		(at 64.77 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "583ae3a1-aeb0-4d98-9f49-20448fa39c48")
 	)
 	(junction
 		(at 133.35 166.37)
@@ -4779,6 +4893,12 @@
 		(uuid "c7ae008f-599d-40fb-9d30-17349bc1d433")
 	)
 	(junction
+		(at 91.44 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dc175f2f-d138-4cdd-9389-bf472058ebc1")
+	)
+	(junction
 		(at 63.5 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4795,6 +4915,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e5cd7aac-117e-45f1-8d80-afa7872b845e")
+	)
+	(junction
+		(at 246.38 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb6d6f50-c296-453f-a149-77cdedfe090b")
 	)
 	(junction
 		(at 64.77 80.01)
@@ -4907,7 +5033,7 @@
 		(uuid "bf386364-9578-4478-abb9-15fdb1bb6ce1")
 	)
 	(no_connect
-		(at 107.95 90.17)
+		(at 107.95 115.57)
 		(uuid "c02823ba-79ab-4e13-9598-8ec12a562efa")
 	)
 	(no_connect
@@ -4992,6 +5118,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 100.33) (xy 254 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b205027-65d1-4033-ac44-38ab2e2890e1")
+	)
+	(wire
+		(pts
 			(xy 64.77 80.01) (xy 67.31 80.01)
 		)
 		(stroke
@@ -5032,7 +5168,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 39.37) (xy 68.58 39.37)
+			(xy 59.69 39.37) (xy 64.77 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5082,16 +5218,6 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 93.98) (xy 245.11 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d9ca331-e56a-467f-a7a1-5cc9f19f69b0")
-	)
-	(wire
-		(pts
 			(xy 64.77 90.17) (xy 64.77 96.52)
 		)
 		(stroke
@@ -5119,6 +5245,26 @@
 			(type default)
 		)
 		(uuid "237c4bc2-15fb-4f38-8163-676e67cfb07a")
+	)
+	(wire
+		(pts
+			(xy 265.43 87.63) (xy 265.43 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25446467-d25a-4cbf-902a-d5e75cfbd668")
+	)
+	(wire
+		(pts
+			(xy 259.08 92.71) (xy 265.43 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ba266a8-0018-4d16-a251-e7ee263a5145")
 	)
 	(wire
 		(pts
@@ -5299,6 +5445,16 @@
 			(type default)
 		)
 		(uuid "54b14f37-9a25-43b8-9e23-f61f756a6667")
+	)
+	(wire
+		(pts
+			(xy 91.44 39.37) (xy 99.06 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56f933c4-ea62-4b05-a0a0-4e2583ef21e3")
 	)
 	(wire
 		(pts
@@ -5502,6 +5658,26 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 92.71) (xy 259.08 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ac372b8-4c55-4d1d-990e-790e9eb96cc5")
+	)
+	(wire
+		(pts
+			(xy 246.38 92.71) (xy 242.57 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fa6ecff-40ad-49bd-a32b-f9844d2f3248")
+	)
+	(wire
+		(pts
 			(xy 63.5 175.26) (xy 63.5 179.07)
 		)
 		(stroke
@@ -5559,6 +5735,16 @@
 			(type default)
 		)
 		(uuid "9912f8b1-cad1-4314-a540-596ef67dbe3c")
+	)
+	(wire
+		(pts
+			(xy 242.57 92.71) (xy 242.57 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99598098-635a-4d37-84e1-ecab0e6232ac")
 	)
 	(wire
 		(pts
@@ -5692,6 +5878,16 @@
 	)
 	(wire
 		(pts
+			(xy 242.57 97.79) (xy 238.76 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c11b0f11-7ff9-45b4-bb40-f7aa54c4027e")
+	)
+	(wire
+		(pts
 			(xy 68.58 44.45) (xy 68.58 48.26)
 		)
 		(stroke
@@ -5772,16 +5968,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 97.79) (xy 245.11 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d89210e6-85f7-4993-965e-0c19970bb7a2")
-	)
-	(wire
-		(pts
 			(xy 26.67 77.47) (xy 26.67 80.01)
 		)
 		(stroke
@@ -5832,7 +6018,17 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 39.37) (xy 99.06 39.37)
+			(xy 259.08 100.33) (xy 259.08 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed615acf-2a4c-4cdc-bf30-a408ed9c652d")
+	)
+	(wire
+		(pts
+			(xy 88.9 39.37) (xy 91.44 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5849,6 +6045,26 @@
 			(type default)
 		)
 		(uuid "f30c72fa-0b0a-4ff8-86e1-dba88db1ea05")
+	)
+	(wire
+		(pts
+			(xy 246.38 100.33) (xy 254 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f386e673-4360-46bd-922b-828cafbf8664")
+	)
+	(wire
+		(pts
+			(xy 64.77 39.37) (xy 68.58 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6ca8d07-ae30-47d2-8613-fabe6e04f195")
 	)
 	(wire
 		(pts
@@ -6238,7 +6454,7 @@
 	)
 	(global_label "GPIO1"
 		(shape input)
-		(at 107.95 115.57 180)
+		(at 107.95 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6248,7 +6464,7 @@
 		)
 		(uuid "6a55ab1d-5694-4727-a801-c5ef07c2e313")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.28 115.57 0)
+			(at 99.28 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6492,7 +6708,7 @@
 			(uuid "4893b6da-b132-4fec-b21f-ba7d100d9243")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR022")
 					(unit 1)
@@ -6575,7 +6791,7 @@
 			(uuid "fed145c8-256b-4a8d-a002-439c2a221240")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "LED2")
 					(unit 1)
@@ -6652,7 +6868,7 @@
 			(uuid "3b5cd6c1-3e7f-4d92-b5a3-c54a153710a9")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "R3")
 					(unit 1)
@@ -6718,7 +6934,7 @@
 			(uuid "31c525b1-96f2-4903-be02-588098145124")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR019")
 					(unit 1)
@@ -6784,7 +7000,7 @@
 			(uuid "2ae2afd6-8951-4851-adb3-66923b86bff4")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR023")
 					(unit 1)
@@ -6850,7 +7066,7 @@
 			(uuid "da62dcc2-7fc0-4045-b342-1df082b97e97")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR08")
 					(unit 1)
@@ -6916,7 +7132,7 @@
 			(uuid "64b4252c-ae45-4aa3-8827-550b74d98279")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR011")
 					(unit 1)
@@ -6992,7 +7208,7 @@
 			(uuid "4d3c9f61-1adf-41fd-9c25-34aab66ac944")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "D1")
 					(unit 1)
@@ -7070,7 +7286,7 @@
 			(uuid "ba12bfd9-1d29-4822-a6a6-f3cdff1802bb")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "C4")
 					(unit 1)
@@ -7136,7 +7352,7 @@
 			(uuid "5f145bad-48e9-4619-92a5-86ba45729a04")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR012")
 					(unit 1)
@@ -7154,7 +7370,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "24af6ca9-c2f3-4b5e-98e6-bda7c064b5bf")
-		(property "Reference" "SW1"
+		(property "Reference" "SW2"
 			(at 57.15 168.91 90)
 			(effects
 				(font
@@ -7190,7 +7406,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RESET"
 			(at 63.5 170.18 0)
 			(effects
 				(font
@@ -7215,9 +7431,9 @@
 			(uuid "04d957de-4eb7-494d-8116-c87f1f3918e1")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
-					(reference "SW1")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -7281,7 +7497,7 @@
 			(uuid "016d6b26-b867-4212-a900-27a0077ef9f7")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR018")
 					(unit 1)
@@ -7400,7 +7616,7 @@
 			(uuid "0c330838-35d6-4ab6-9b8b-532e2cd50771")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "U3")
 					(unit 1)
@@ -7465,7 +7681,7 @@
 			(uuid "6635f053-7d0b-4b20-96d4-6916bf2db8a6")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR01")
 					(unit 1)
@@ -7542,7 +7758,7 @@
 			(uuid "3a7d8ea0-d5b9-4533-bab7-c23974a2fe39")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "R6")
 					(unit 1)
@@ -7621,7 +7837,7 @@
 			(uuid "c1365eda-4be7-4ac1-89e0-3d5923a8def6")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "C1")
 					(unit 1)
@@ -7697,7 +7913,7 @@
 			(uuid "4fbf60c8-ca3b-4082-a39e-37cd3a1708bd")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "R9")
 					(unit 1)
@@ -7774,7 +7990,7 @@
 			(uuid "01bffc3d-83a7-4aa8-ac06-f868ec332e98")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "C6")
 					(unit 1)
@@ -7840,7 +8056,7 @@
 			(uuid "3243b4c3-81ef-4af8-89f7-649bd1faf43b")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR09")
 					(unit 1)
@@ -7926,7 +8142,7 @@
 			(uuid "f8f75f16-4357-4bf9-9945-512c0325199e")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "U1")
 					(unit 1)
@@ -7992,7 +8208,7 @@
 			(uuid "3d72aee1-4851-48db-a5d8-253694248e54")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR017")
 					(unit 1)
@@ -8058,7 +8274,7 @@
 			(uuid "036b8e13-72b3-48be-ae23-0152ef5a0962")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR024")
 					(unit 1)
@@ -8075,7 +8291,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "50b96060-d65f-4236-96a9-c83db62f9984")
-		(property "Reference" "SW2"
+		(property "Reference" "SW1"
 			(at 27.94 168.91 90)
 			(effects
 				(font
@@ -8111,7 +8327,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "BOOT"
 			(at 34.29 170.18 0)
 			(effects
 				(font
@@ -8136,9 +8352,9 @@
 			(uuid "a134fdbb-31cb-4ba9-bbbb-0576ec1c44ef")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
-					(reference "SW2")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -8202,7 +8418,7 @@
 			(uuid "1bf9f9ec-e733-4381-9652-f73f12789c23")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR04")
 					(unit 1)
@@ -8281,7 +8497,7 @@
 			(uuid "80a7507e-0074-4f86-bf2c-5e1b7e31b620")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "C5")
 					(unit 1)
@@ -8549,7 +8765,7 @@
 			(uuid "34480c75-b214-4bc2-9ba2-8918c23dafeb")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "U2")
 					(unit 1)
@@ -8628,7 +8844,7 @@
 			(uuid "ae33c4d3-fe0e-4c38-b48c-6af974c28377")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "R2")
 					(unit 1)
@@ -8704,7 +8920,7 @@
 			(uuid "595ebc75-b3ac-44be-a115-407cab80e6f6")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "R8")
 					(unit 1)
@@ -8770,7 +8986,7 @@
 			(uuid "b3ede8bf-704c-4d4c-8a38-45891c99397b")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR030")
 					(unit 1)
@@ -8836,7 +9052,7 @@
 			(uuid "c713c106-6f7b-442c-a1f0-024265a6ed4d")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR031")
 					(unit 1)
@@ -8922,7 +9138,7 @@
 			(uuid "bf177813-ed07-4c85-99e5-5068c35871f1")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "U4")
 					(unit 1)
@@ -8988,7 +9204,7 @@
 			(uuid "9c62d97d-e1cf-4edf-882c-39d11afd0d08")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR013")
 					(unit 1)
@@ -9054,7 +9270,7 @@
 			(uuid "8e36939e-a5d3-4e21-a0d3-97a71fea36ff")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#FLG01")
 					(unit 1)
@@ -9139,7 +9355,7 @@
 			(uuid "636e4ef5-1e42-4650-af25-55c71beb1fb7")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "CN1")
 					(unit 1)
@@ -9216,7 +9432,7 @@
 			(uuid "41129380-ff74-4d95-9fbb-6c2f791967b3")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "R5")
 					(unit 1)
@@ -9339,7 +9555,7 @@
 			(uuid "54a064fd-55aa-4c1f-bbe2-25f28d49bd1c")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "J2")
 					(unit 1)
@@ -9418,7 +9634,7 @@
 			(uuid "961214f7-9bd5-48e1-89f4-883fc9153c9e")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "R12")
 					(unit 1)
@@ -9484,9 +9700,154 @@
 			(uuid "b5283a45-b3f6-49b1-8a09-ab6ae6093098")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 246.38 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "84526f61-6ff2-4997-927f-0ba1d23549b5")
+		(property "Reference" "C8"
+			(at 250.19 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 250.19 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 247.3452 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 246.38 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C1711"
+			(at 246.38 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1e9565a3-ecf1-428c-b780-567cf87ef67a")
+		)
+		(pin "1"
+			(uuid "9f30766a-ee73-446f-b321-04c7dcc12b1e")
+		)
+		(instances
+			(project "Wakeboard"
+				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 91.44 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "852054d5-9090-42a0-b0d1-7f6bef5da1cc")
+		(property "Reference" "TP2"
+			(at 93.98 34.7979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 93.98 37.3379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 96.52 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 91.44 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b6600ec8-7c44-404b-a9af-def615e215c4")
+		)
+		(instances
+			(project "Wakeboard"
+				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -9549,7 +9910,7 @@
 			(uuid "a4df5f68-349c-4694-8116-f76925f06a7e")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR029")
 					(unit 1)
@@ -9628,7 +9989,7 @@
 			(uuid "5ee7be58-6d7f-419d-b256-d66ff3622eb4")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "C2")
 					(unit 1)
@@ -9707,9 +10068,76 @@
 			(uuid "bd810e51-17ca-418e-8263-4e9aadc0ca8e")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 64.77 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8bb32d5e-8b88-4692-8a49-21d13545ca99")
+		(property "Reference" "TP1"
+			(at 67.31 34.7979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 67.31 37.3379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 69.85 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 64.77 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96eef5d6-70fb-4b43-84d5-1d0411f37efb")
+		)
+		(instances
+			(project "Wakeboard"
+				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -9773,7 +10201,7 @@
 			(uuid "6d0daab6-254b-4237-af64-8e054eb4570c")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR015")
 					(unit 1)
@@ -9839,7 +10267,7 @@
 			(uuid "30ef1e79-10d0-4ad9-9c29-c342aa814ff4")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR025")
 					(unit 1)
@@ -9905,9 +10333,75 @@
 			(uuid "e4aca552-0489-4b51-9d48-ccadf01428cc")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 259.08 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b648a78-1d52-40c9-89c8-4d1e4a43fd7f")
+		(property "Reference" "#PWR027"
+			(at 259.08 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 259.08 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 259.08 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b68716b-adef-41a7-ae85-1d904cf940d1")
+		)
+		(instances
+			(project "Wakeboard"
+				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -9987,7 +10481,7 @@
 			(uuid "32fddba0-0721-420d-96ec-f4fb047be878")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "Q1")
 					(unit 1)
@@ -10053,7 +10547,7 @@
 			(uuid "3718bc2c-86a9-4130-b01f-3efed7df4989")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR028")
 					(unit 1)
@@ -10129,7 +10623,7 @@
 			(uuid "3969d277-c80d-467d-b972-7e078a5991a1")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "R10")
 					(unit 1)
@@ -10195,7 +10689,7 @@
 			(uuid "41f9a4e5-2f0f-4ef6-840c-50b138edfbc1")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR016")
 					(unit 1)
@@ -10261,7 +10755,7 @@
 			(uuid "b218c44a-a58b-4db9-92b7-b2a7a6e7fa34")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR010")
 					(unit 1)
@@ -10327,7 +10821,7 @@
 			(uuid "f881d818-4c42-4a61-9de0-127bd6b0ef77")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR033")
 					(unit 1)
@@ -10393,7 +10887,7 @@
 			(uuid "d07d4734-1273-435b-a9e6-1ab4f73ed05d")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#FLG02")
 					(unit 1)
@@ -10470,7 +10964,7 @@
 			(uuid "4c785e1e-105f-4e77-a80f-05d7e3a1bf76")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "R4")
 					(unit 1)
@@ -10546,7 +11040,7 @@
 			(uuid "8c0a072b-fa5a-4e3e-bf8c-ad7fd6ec3375")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "LED1")
 					(unit 1)
@@ -10555,16 +11049,35 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 245.11 93.98 0)
+		(lib_id "Device:C")
+		(at 259.08 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c6a008eb-e41a-4466-8678-ff6b917e4216")
-		(property "Reference" "#PWR05"
-			(at 245.11 97.79 0)
+		(fields_autoplaced yes)
+		(uuid "bf49a088-25b8-4a8b-9916-b5b848a9b55d")
+		(property "Reference" "C7"
+			(at 262.89 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 262.89 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 260.0452 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10572,8 +11085,69 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3.3V"
-			(at 245.11 89.154 0)
+		(property "Datasheet" "~"
+			(at 259.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 259.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C1713"
+			(at 259.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1a442be1-dcf9-4d78-9a54-3f26b305408a")
+		)
+		(pin "1"
+			(uuid "99ed2edd-5f7e-4754-aa5a-1ce6b7f694c9")
+		)
+		(instances
+			(project "Wakeboard"
+				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 254 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bfa1e3ef-7431-4003-ba37-60544e0fdd33")
+		(property "Reference" "#PWR026"
+			(at 254 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 254 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10581,7 +11155,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 245.11 93.98 0)
+			(at 254 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10590,7 +11164,72 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 245.11 93.98 0)
+			(at 254 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 254 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0c6641f0-859f-4d2e-8f54-c2c70dd06290")
+		)
+		(instances
+			(project "Wakeboard"
+				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 265.43 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c6a008eb-e41a-4466-8678-ff6b917e4216")
+		(property "Reference" "#PWR05"
+			(at 265.43 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 265.43 82.804 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 265.43 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 265.43 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10599,7 +11238,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 245.11 93.98 0)
+			(at 265.43 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10611,7 +11250,7 @@
 			(uuid "e7ace358-ad32-41ab-b7d9-a51e52bde88e")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR05")
 					(unit 1)
@@ -10690,7 +11329,7 @@
 			(uuid "5e84fba6-1708-4328-b9a3-2ebdbf780fa5")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "R1")
 					(unit 1)
@@ -10769,7 +11408,7 @@
 			(uuid "6f6b36b0-c5fc-46ac-a5ec-4a9486026453")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "R11")
 					(unit 1)
@@ -10835,7 +11474,7 @@
 			(uuid "0833cf63-88e7-432a-992f-9e197d083833")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR021")
 					(unit 1)
@@ -10914,7 +11553,7 @@
 			(uuid "85976091-71bf-4168-8511-50cf009ae46c")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "C3")
 					(unit 1)
@@ -10980,7 +11619,7 @@
 			(uuid "de3e5584-d328-4cd8-ada0-331c4d1070d2")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR032")
 					(unit 1)
@@ -11045,7 +11684,7 @@
 			(uuid "e5faf1ff-2ecd-4090-86ab-cb2c11b7154c")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR06")
 					(unit 1)
@@ -11111,7 +11750,7 @@
 			(uuid "562630d7-0414-4207-b80a-262e3788bb1c")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR020")
 					(unit 1)
@@ -11177,7 +11816,7 @@
 			(uuid "7f48cf43-497e-40db-bd73-fed564bf6ced")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#FLG03")
 					(unit 1)
@@ -11242,7 +11881,7 @@
 			(uuid "4d799d51-999d-48ea-9174-2a555dd0bc20")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR03")
 					(unit 1)
@@ -11308,7 +11947,7 @@
 			(uuid "204b8659-3f9b-48fa-80c0-e43f6a5dde41")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR014")
 					(unit 1)
@@ -11374,7 +12013,7 @@
 			(uuid "3c357cb1-328c-4e13-8719-10b3668e0bae")
 		)
 		(instances
-			(project "Washingboard"
+			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR07")
 					(unit 1)
