@@ -4937,7 +4937,7 @@
 		(uuid "081ab62b-7c19-4581-9c8d-ef4f764a076d")
 	)
 	(no_connect
-		(at 107.95 130.81)
+		(at 138.43 110.49)
 		(uuid "0ab67974-e72e-4440-a72e-a974366c8b4d")
 	)
 	(no_connect
@@ -4967,6 +4967,10 @@
 	(no_connect
 		(at 238.76 95.25)
 		(uuid "28786ab8-1d0a-4fa2-98e9-0aca83699eb3")
+	)
+	(no_connect
+		(at 107.95 90.17)
+		(uuid "295d2cea-1a60-4d55-8747-b9147e8d96ae")
 	)
 	(no_connect
 		(at 238.76 92.71)
@@ -5007,10 +5011,6 @@
 	(no_connect
 		(at 107.95 133.35)
 		(uuid "74179d5b-922f-4b53-a98a-a918fd22ce72")
-	)
-	(no_connect
-		(at 107.95 113.03)
-		(uuid "83ef9a8f-7b7c-4432-8d71-3546b7b05c65")
 	)
 	(no_connect
 		(at 138.43 85.09)
@@ -6364,7 +6364,7 @@
 			)
 		)
 	)
-	(global_label "GPIO1"
+	(global_label "BAT_SENS"
 		(shape input)
 		(at 133.35 160.02 90)
 		(fields_autoplaced yes)
@@ -6376,7 +6376,7 @@
 		)
 		(uuid "54f8f461-f67d-4ace-b6bf-189309149fce")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 133.35 151.35 90)
+			(at 133.35 147.8425 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6452,9 +6452,9 @@
 			)
 		)
 	)
-	(global_label "GPIO1"
+	(global_label "BAT_SENS"
 		(shape input)
-		(at 107.95 90.17 180)
+		(at 107.95 113.03 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6464,7 +6464,7 @@
 		)
 		(uuid "6a55ab1d-5694-4727-a801-c5ef07c2e313")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.28 90.17 0)
+			(at 95.7725 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6476,22 +6476,22 @@
 	)
 	(global_label "INT1"
 		(shape input)
-		(at 138.43 105.41 0)
+		(at 107.95 130.81 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "776b8063-8752-49c7-8791-9636d1b2f388")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 145.5276 105.41 0)
+			(at 100.8524 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -6630,7 +6630,7 @@
 	)
 	(global_label "SDA"
 		(shape input)
-		(at 138.43 110.49 0)
+		(at 138.43 105.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6640,7 +6640,7 @@
 		)
 		(uuid "f48c2812-9d12-4134-90fa-71479b093038")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.9833 110.49 0)
+			(at 144.9833 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9805,7 +9805,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "3.3V"
 			(at 93.98 37.3379 0)
 			(effects
 				(font
@@ -9832,7 +9832,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "3.3V"
 			(at 91.44 39.37 0)
 			(effects
 				(font
@@ -10095,7 +10095,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "5V"
 			(at 67.31 37.3379 0)
 			(effects
 				(font
@@ -10122,7 +10122,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "5V"
 			(at 64.77 39.37 0)
 			(effects
 				(font
