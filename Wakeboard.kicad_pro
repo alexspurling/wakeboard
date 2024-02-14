@@ -560,7 +560,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "../Factory/",
+      "plot": "Production",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
