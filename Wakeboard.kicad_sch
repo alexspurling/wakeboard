@@ -9793,7 +9793,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "852054d5-9090-42a0-b0d1-7f6bef5da1cc")
 		(property "Reference" "TP2"
@@ -10083,7 +10083,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "8bb32d5e-8b88-4692-8a49-21d13545ca99")
 		(property "Reference" "TP1"
