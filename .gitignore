@@ -1,0 +1,6 @@
+.idea/
+fp-info-cache
+sym-lib-table
+*-backups/
+_autosave*
+*.lck
