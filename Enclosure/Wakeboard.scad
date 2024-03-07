@@ -9,6 +9,7 @@ wall_thickness = 2;
 
 outer_width = inner_width + wall_thickness * 2;
 outer_length = inner_length + wall_thickness * 2;
+
 height = 13.2;
 
 bevel_radius = 0.5;
@@ -50,4 +51,13 @@ module box_with_lip(inner_width, inner_length, height, radius, wall_thickness=2,
     }
 }
 
-box_with_lip(inner_width, inner_length, height, 5, wall_thickness, bevel_radius);
+module usb_hole(xpos, ypos, zpos) {
+    usb_hole_width = 9.3;
+    translate([xpos - usb_hole_width / 2, ypos, zpos])
+    cube([usb_hole_width, 10, 5]);
+}
+
+difference () {
+    box_with_lip(inner_width, inner_length, height, 5, wall_thickness, bevel_radius);
+    usb_hole(outer_width / 2, 0, height + bevel_radius);
+}
