@@ -1,0 +1,166 @@
+difference() {
+	group() {
+		difference() {
+			union() {
+				group() {
+					difference() {
+						minkowski(convexity = 0) {
+							sphere($fn = 0, $fa = 1, $fs = 0.1, r = 0.5);
+							hull() {
+								multmatrix([[1, 0, 0, 5.5], [0, 1, 0, 5.5], [0, 0, 1, 0.5], [0, 0, 0, 1]]) {
+									cylinder($fn = 0, $fa = 1, $fs = 0.1, h = 15.2, r1 = 5, r2 = 5, center = false);
+								}
+								multmatrix([[1, 0, 0, 29.5], [0, 1, 0, 5.5], [0, 0, 1, 0.5], [0, 0, 0, 1]]) {
+									cylinder($fn = 0, $fa = 1, $fs = 0.1, h = 15.2, r1 = 5, r2 = 5, center = false);
+								}
+								multmatrix([[1, 0, 0, 29.5], [0, 1, 0, 57.5], [0, 0, 1, 0.5], [0, 0, 0, 1]]) {
+									cylinder($fn = 0, $fa = 1, $fs = 0.1, h = 15.2, r1 = 5, r2 = 5, center = false);
+								}
+								multmatrix([[1, 0, 0, 5.5], [0, 1, 0, 57.5], [0, 0, 1, 0.5], [0, 0, 0, 1]]) {
+									cylinder($fn = 0, $fa = 1, $fs = 0.1, h = 15.2, r1 = 5, r2 = 5, center = false);
+								}
+							}
+						}
+						multmatrix([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 15.7], [0, 0, 0, 1]]) {
+							cube(size = [35, 63, 0.5], center = false);
+						}
+					}
+				}
+				multmatrix([[1, 0, 0, 1], [0, 1, 0, 1], [0, 0, 1, 15.7], [0, 0, 0, 1]]) {
+					group() {
+						difference() {
+							minkowski(convexity = 0) {
+								sphere($fn = 0, $fa = 1, $fs = 0.1, r = 0);
+								hull() {
+									multmatrix([[1, 0, 0, 4], [0, 1, 0, 4], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+										cylinder($fn = 0, $fa = 1, $fs = 0.1, h = 1, r1 = 4, r2 = 4, center = false);
+									}
+									multmatrix([[1, 0, 0, 29], [0, 1, 0, 4], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+										cylinder($fn = 0, $fa = 1, $fs = 0.1, h = 1, r1 = 4, r2 = 4, center = false);
+									}
+									multmatrix([[1, 0, 0, 29], [0, 1, 0, 57], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+										cylinder($fn = 0, $fa = 1, $fs = 0.1, h = 1, r1 = 4, r2 = 4, center = false);
+									}
+									multmatrix([[1, 0, 0, 4], [0, 1, 0, 57], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+										cylinder($fn = 0, $fa = 1, $fs = 0.1, h = 1, r1 = 4, r2 = 4, center = false);
+									}
+								}
+							}
+							multmatrix([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 1], [0, 0, 0, 1]]) {
+								cube(size = [33, 61, 0], center = false);
+							}
+						}
+					}
+				}
+			}
+			multmatrix([[1, 0, 0, 2], [0, 1, 0, 2], [0, 0, 1, 2.5], [0, 0, 0, 1]]) {
+				group() {
+					difference() {
+						minkowski(convexity = 0) {
+							sphere($fn = 0, $fa = 1, $fs = 0.1, r = 0);
+							hull() {
+								multmatrix([[1, 0, 0, 3], [0, 1, 0, 3], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+									cylinder($fn = 0, $fa = 1, $fs = 0.1, h = 15.3, r1 = 3, r2 = 3, center = false);
+								}
+								multmatrix([[1, 0, 0, 28], [0, 1, 0, 3], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+									cylinder($fn = 0, $fa = 1, $fs = 0.1, h = 15.3, r1 = 3, r2 = 3, center = false);
+								}
+								multmatrix([[1, 0, 0, 28], [0, 1, 0, 56], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+									cylinder($fn = 0, $fa = 1, $fs = 0.1, h = 15.3, r1 = 3, r2 = 3, center = false);
+								}
+								multmatrix([[1, 0, 0, 3], [0, 1, 0, 56], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+									cylinder($fn = 0, $fa = 1, $fs = 0.1, h = 15.3, r1 = 3, r2 = 3, center = false);
+								}
+							}
+						}
+						multmatrix([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 15.3], [0, 0, 0, 1]]) {
+							cube(size = [31, 59, 0], center = false);
+						}
+					}
+				}
+			}
+		}
+	}
+	group() {
+		multmatrix([[1, 0, 0, 12.9], [0, 1, 0, 0], [0, 0, 1, 15.7], [0, 0, 0, 1]]) {
+			cube(size = [9.2, 5, 5], center = false);
+		}
+	}
+}
+multmatrix([[1, 0, 0, 7.5], [0, 1, 0, 2], [0, 0, 1, 2.5], [0, 0, 0, 1]]) {
+	group() {
+		multmatrix([[0, -1, 0, 0], [1, 0, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+			group() {
+				linear_extrude(height = 11.2, $fn = 0, $fa = 1, $fs = 0.1) {
+					difference() {
+						square(size = [2.25, 2.25], center = false);
+						multmatrix([[1, 0, 0, 2.25], [0, 1, 0, 2.25], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+							circle($fn = 0, $fa = 1, $fs = 0.1, r = 2.25);
+						}
+					}
+				}
+			}
+		}
+		multmatrix([[1, 0, 0, 20], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+			group() {
+				linear_extrude(height = 11.2, $fn = 0, $fa = 1, $fs = 0.1) {
+					difference() {
+						square(size = [2.25, 2.25], center = false);
+						multmatrix([[1, 0, 0, 2.25], [0, 1, 0, 2.25], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+							circle($fn = 0, $fa = 1, $fs = 0.1, r = 2.25);
+						}
+					}
+				}
+			}
+		}
+		hull() {
+			multmatrix([[1, 0, 0, 2.25], [0, 1, 0, 2.25], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+				cylinder($fn = 0, $fa = 1, $fs = 0.1, h = 11.2, r1 = 2.25, r2 = 2.25, center = false);
+			}
+			multmatrix([[1, 0, 0, 17.75], [0, 1, 0, 2.25], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+				cylinder($fn = 0, $fa = 1, $fs = 0.1, h = 11.2, r1 = 2.25, r2 = 2.25, center = false);
+			}
+			cube(size = [20, 2.25, 11.2], center = false);
+		}
+	}
+}
+multmatrix([[1, 0, 0, 27.5], [0, 1, 0, 61], [0, 0, 1, 2.5], [0, 0, 0, 1]]) {
+	multmatrix([[-1, 0, 0, 0], [-0, -1, 0, 0], [-0, 0, 1, 0], [0, 0, 0, 1]]) {
+		group() {
+			multmatrix([[0, -1, 0, 0], [1, 0, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+				group() {
+					linear_extrude(height = 11.2, $fn = 0, $fa = 1, $fs = 0.1) {
+						difference() {
+							square(size = [2.25, 2.25], center = false);
+							multmatrix([[1, 0, 0, 2.25], [0, 1, 0, 2.25], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+								circle($fn = 0, $fa = 1, $fs = 0.1, r = 2.25);
+							}
+						}
+					}
+				}
+			}
+			multmatrix([[1, 0, 0, 20], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+				group() {
+					linear_extrude(height = 11.2, $fn = 0, $fa = 1, $fs = 0.1) {
+						difference() {
+							square(size = [2.25, 2.25], center = false);
+							multmatrix([[1, 0, 0, 2.25], [0, 1, 0, 2.25], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+								circle($fn = 0, $fa = 1, $fs = 0.1, r = 2.25);
+							}
+						}
+					}
+				}
+			}
+			hull() {
+				multmatrix([[1, 0, 0, 2.25], [0, 1, 0, 2.25], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+					cylinder($fn = 0, $fa = 1, $fs = 0.1, h = 11.2, r1 = 2.25, r2 = 2.25, center = false);
+				}
+				multmatrix([[1, 0, 0, 17.75], [0, 1, 0, 2.25], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+					cylinder($fn = 0, $fa = 1, $fs = 0.1, h = 11.2, r1 = 2.25, r2 = 2.25, center = false);
+				}
+				cube(size = [20, 2.25, 11.2], center = false);
+			}
+		}
+	}
+}
+
