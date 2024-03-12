@@ -563,7 +563,7 @@
       "plot": "Production",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Wakeboard.step",
       "svg": "",
       "vrml": ""
     },

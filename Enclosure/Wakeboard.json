@@ -1,59 +1,9 @@
 {
     "fileFormatVersion": "1",
     "parameterSets": {
-        "New set 1": {
-            "$fa": "1",
-            "$fs": "0.10000000000000001",
-            "inner_length": "59",
-            "inner_width": "31",
-            "lip_thickness": "1",
-            "wall_thickness": "2"
-        },
-        "New set 2": {
-            "$fa": "1",
-            "$fs": "0.10000000000000001",
-            "inner_length": "59",
-            "inner_width": "31",
-            "lip_thickness": "1",
-            "wall_thickness": "2"
-        },
-        "New set 3": {
-            "$fa": "1",
-            "$fs": "0.40000000000000002",
-            "battery_height": "11.300000000000001",
-            "battery_length": "50",
-            "battery_width": "34.600000000000001",
-            "bevel_radius": "0.5",
-            "inner_height": "13.199999999999999",
-            "inner_length": "59",
-            "inner_width": "38",
-            "lip_thickness": "1.3",
-            "magnet_height": "4",
-            "magnet_radius": "2.5",
-            "outer_radius": "5",
-            "pcb_height": "11.5",
-            "support_radius": "4.5",
-            "support_width": "20",
-            "wall_thickness": "2.6000000000000001"
-        },
-        "New set 4": {
-            "$fa": "1",
-            "$fs": "0.40000000000000002",
-            "battery_height": "11.300000000000001",
-            "battery_length": "49.600000000000001",
-            "battery_width": "34.600000000000001",
-            "bevel_radius": "0.5",
-            "inner_height": "13.199999999999999",
-            "inner_length": "59",
-            "inner_width": "34",
-            "lip_thickness": "1.3",
-            "magnet_height": "4",
-            "magnet_radius": "2.5",
-            "outer_radius": "5",
-            "pcb_height": "11.5",
-            "support_radius": "4.7999999999999998",
-            "support_width": "20",
-            "wall_thickness": "2.6000000000000001"
-        }
+        "New set 1": "",
+        "New set 2": "",
+        "New set 3": "",
+        "New set 4": ""
     }
 }
