@@ -1,6 +1,6 @@
 use <MCAD/boxes.scad>
 $fa=1;
-$fs=0.4;
+$fs=0.2;
 
 
 inner_width = 34;
@@ -27,6 +27,7 @@ bevel_radius = 0.5;
 base = wall_thickness + bevel_radius;
 
 lip_thickness = 1.3;
+lip_height = 2;
 
 support_width = 9.5;
 support_height = 11.6;
@@ -37,7 +38,7 @@ magnet_height = 4;
 
 battery_socket_width = 7.4;
 battery_socket_length = 7.9;
-battery_socket_height = 5.7;
+battery_socket_height = 5.5;
 
 battery_socket_x = (outer_width / 2 - pcb_width / 2) + 4.8;
 battery_socket_y = (outer_length / 2 - pcb_length / 2) + 9;
@@ -46,11 +47,14 @@ slot_depth = 1;
 slot_width = 2;
 slot_height = support_height + 1;
 
-lid_height = 8.5;
+lid_height = 8;
 lid_inner_height = lid_height - wall_thickness;
 
-usb_hole_width = 9.2;
+usb_hole_width = 9.1;
 usb_hole_height = 3.5;
+
+tab_width = 10;
+tab_height = lip_height - 0.4;
 
 
 module roundedBox(w, l, h, r) {
@@ -105,13 +109,41 @@ module box_with_lip(inner_width, inner_length, inner_height, radius, wall_thickn
             box(outer_width, outer_length, outer_height, radius, bevel_radius);
             // lip
             translate([wall_thickness - lip_thickness, wall_thickness - lip_thickness, outer_height + bevel_radius])
-            box(inner_width + lip_thickness * 2, inner_length + lip_thickness * 2, lip_thickness, radius - wall_thickness + lip_thickness, 0);
+            box(inner_width + lip_thickness * 2, inner_length + lip_thickness * 2, lip_height, radius - wall_thickness + lip_thickness, 0);
         }
         
         // inner cutout
         translate([wall_thickness, wall_thickness, base])
         box(inner_width, inner_length, outer_height + 0.1, radius - wall_thickness, 0);
+        
+        // cutout for tab slot left
+        translate([wall_thickness - lip_thickness -0.05, outer_length / 2 - tab_width / 2, outer_height + bevel_radius])
+        cube([lip_thickness + 0.1, tab_width, lip_height]);
+        
+        // cutout for tab slot right
+        translate([outer_width - wall_thickness -0.05, outer_length / 2 - tab_width / 2, outer_height + bevel_radius])
+        cube([lip_thickness + 0.1, tab_width, lip_height]);
+        
+        // cutout for tab slot back
+        translate([outer_width / 2 - tab_width / 2, outer_length - wall_thickness - 0.05, outer_height + bevel_radius])
+        cube([tab_width, lip_thickness + 0.1, lip_height]);
     }
+    
+    // tab slot left
+    translate([wall_thickness - lip_thickness, outer_length / 2 + tab_width / 2, outer_height + bevel_radius])
+    rotate([0, 0, 270])
+    tab_slot(tab_width, tab_height);
+    
+    // tab slot right
+    translate([outer_width - wall_thickness + lip_thickness, outer_length / 2 - tab_width / 2, outer_height + bevel_radius])
+    rotate([0, 0, 90])
+    tab_slot(tab_width, tab_height);
+    
+    // tab slot back
+    translate([outer_width / 2 + tab_width / 2, outer_length - wall_thickness + lip_thickness, outer_height + bevel_radius])
+    rotate([0, 0, 180])
+    tab_slot(tab_width, tab_height, 0);
+    
     supports();
 }
 
@@ -252,6 +284,7 @@ module pcb() {
         translate([pcb_width / 2 - cutout_width / 2, pcb_length - cutout_length + 0.05, -0.05])
         cube([cutout_width, cutout_length + 0.1, pcb_height + 0.1]);
     }
+    
     translate([
         (outer_width / 2 - pcb_width / 2) + 4.8, 
         (outer_length / 2 - pcb_length / 2) + 9, 
@@ -262,23 +295,52 @@ module pcb() {
 
 
 
-module lid() {
-
+module lid() {    
     lid_lip_thickness = lip_thickness - 0.1;
-    translate([0, 0, inner_height + base + 5])
-    difference() {
-        box(outer_width, outer_length, lid_height, outer_radius);
+    tab_clearance = 0.15;
     
-        // lip
-        translate([lid_lip_thickness, lid_lip_thickness, -0.1])
-        box(outer_width - lid_lip_thickness * 2, outer_length - lid_lip_thickness * 2, lip_thickness + 0.1, outer_radius - lid_lip_thickness);
+    // translate([0, 0, outer_height + 5])
+    translate([-5, 0, lid_height + bevel_radius])
+    rotate([0, 180, 0])
+    union() {
+        difference() {
+            rotate([0, 180, 0])
+            translate([-outer_width, 0, -lid_height-bevel_radius])
+            box(outer_width, outer_length, lid_height, outer_radius, bevel_radius);
         
-        // Inner cutout
-        translate([wall_thickness, wall_thickness, lip_thickness - 0.1])
-        box(outer_width - wall_thickness * 2, outer_length - wall_thickness * 2, lid_inner_height + 0.1, outer_radius - wall_thickness);
+            // lip
+            translate([lid_lip_thickness, lid_lip_thickness, -0.1])
+            box(outer_width - lid_lip_thickness * 2, outer_length - lid_lip_thickness * 2, lip_height, outer_radius - lid_lip_thickness);
+            
+            // Inner cutout
+            translate([wall_thickness, wall_thickness, lip_thickness - 0.1])
+            box(outer_width - wall_thickness * 2, outer_length - wall_thickness * 2, lid_inner_height + 0.1, outer_radius - wall_thickness);
+            
+            // USB hole
+            usb_hole(outer_width / 2, -0.1, -0.05);
+            
+            // Logo
+            translate([12, outer_length - wall_thickness - 1, lid_height])
+            rotate([0, 0, 270])
+            scale([0.65, 0.65, 1])
+            linear_extrude(0.51)
+            import("LogoNoVersion2.svg");
+        }
         
-        // USB hole
-        usb_hole(outer_width / 2, -0.1, -0.05);
+        // Tab left
+        translate([lid_lip_thickness - tab_clearance, outer_length / 2 + tab_width / 2, 0])
+        rotate([0, 0, 270])
+        tab(tab_width, tab_height);
+        
+        // Tab right
+        translate([outer_width - lid_lip_thickness + tab_clearance, outer_length / 2 - tab_width / 2, 0])
+        rotate([0, 0, 90])
+        tab(tab_width, tab_height);
+        
+        // Tab back
+        translate([outer_width / 2 + tab_width / 2, outer_length - lid_lip_thickness + tab_clearance, 0])
+        rotate([0, 0, 180])
+        tab(tab_width, tab_height);
     }
     
 }
@@ -286,8 +348,58 @@ module lid() {
 
 case();
 // % battery();
-pcb();
+// pcb();
 lid();
 
+
+module tab(w, h) {
+    angle = 35;
+    depth = (h / 2) / tan(angle);
+    
+    points = [
+        [0, 0, 0], 
+        [0, 0, h], 
+        [w, 0, h],
+        [w, 0, 0], 
+        [depth, depth, h / 2], 
+        [w - depth, depth, h / 2], 
+        ];
+    faces = [[0, 1, 2, 3], [1, 4, 5, 2], [0, 3, 5, 4], [0, 4, 1], [3, 2, 5]];
+    polyhedron(points, faces);
+}
+
+module tab_slot(w, h, cutoff=0.4) {
+    scale_x = 1.1;
+    scale_y = 1.25;
+    scale_z = 1.35;
+    
+    difference() {
+    
+        union() {
+            // containing wall
+            translate([(w - w * scale_x) / 2, 0, 0])
+            cube([w * scale_x, lip_thickness, lip_height]);
+            
+            // outer tab
+            translate([(w - w * scale_x) / 2, 0.4, (h - h * scale_z) / 2])
+            scale([scale_x, scale_y, scale_z])
+            tab(w, h);
+        }
+        
+        // tab hole
+        translate([0, -.01, 0])
+        tab(w, h);
+        
+        // Cut sharp point of outer part of slot
+        translate([0, lip_thickness + cutoff, 0])
+        cube([w, 1, h]);
+    }
+    
+    // translate([0, lip_thickness + 0.01, 0])
+    // cube([w, lip_thickness, lip_height / 2]);
+}
+
+// tab(10, lip_height - 0.3);
+// tab_slot(10, lip_height - 0.4, 0);
 
 
