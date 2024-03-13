@@ -116,6 +116,14 @@ module box_with_lip(inner_width, inner_length, inner_height, radius, wall_thickn
         translate([wall_thickness, wall_thickness, base])
         box(inner_width, inner_length, outer_height + 0.1, radius - wall_thickness, 0);
         
+        recess_width = outer_width - 15;
+        recess_length = outer_length - 15;
+        recess_height = 0.15;
+        recess_radius = 2;
+        // bottom recess
+        translate([outer_width / 2 - recess_width / 2, outer_length / 2 - recess_length / 2, -0.05])
+        box(recess_width, recess_length, recess_height, recess_radius, 0);
+        
         // cutout for tab slot left
         translate([wall_thickness - lip_thickness -0.05, outer_length / 2 - tab_width / 2, outer_height + bevel_radius])
         cube([lip_thickness + 0.1, tab_width, lip_height]);
