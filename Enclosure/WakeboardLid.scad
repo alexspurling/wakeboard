@@ -307,6 +307,8 @@ module lid() {
     lid_lip_thickness = lip_thickness - 0.1;
     tab_clearance = 0.15;
     
+    led_cutout_size = 2;
+    
     // translate([0, 0, outer_height + 5])
     translate([outer_width, 0, lid_height + bevel_radius])
     rotate([0, 180, 0])
@@ -333,6 +335,20 @@ module lid() {
             scale([0.65, 0.65, 1])
             linear_extrude(0.51)
             import("LogoNoVersion2.svg");
+            
+            // RGB led cut out
+            translate([
+                outer_width - wall_thickness - 0.1, 
+                outer_length / 2 - pcb_length / 2 + 35.9,
+                lid_height / 2 - led_cutout_size / 2])
+            cube([3, led_cutout_size, led_cutout_size]);
+            
+            // RGB led cut out
+            translate([
+                outer_width - wall_thickness - 0.1, 
+                outer_length / 2 - pcb_length / 2 + 13.66,
+                lid_height / 2 - led_cutout_size / 2])
+            cube([3, led_cutout_size, led_cutout_size]);
         }
         
         // Tab left
