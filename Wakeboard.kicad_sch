@@ -4851,6 +4851,12 @@
 		(uuid "770da790-9b6c-4a15-bd4b-69eb5459b7bd")
 	)
 	(junction
+		(at 25.4 24.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7dc3a762-6265-4faa-a618-25be2ebf7406")
+	)
+	(junction
 		(at 198.12 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5388,6 +5394,16 @@
 	)
 	(wire
 		(pts
+			(xy 25.4 24.13) (xy 25.4 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4211886a-c7a5-4f94-baf0-98d7cf6ecfd5")
+	)
+	(wire
+		(pts
 			(xy 232.41 52.07) (xy 232.41 55.88)
 		)
 		(stroke
@@ -5398,7 +5414,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 22.86) (xy 25.4 27.94)
+			(xy 25.4 22.86) (xy 25.4 24.13)
 		)
 		(stroke
 			(width 0)
@@ -5585,6 +5601,16 @@
 			(type default)
 		)
 		(uuid "6b399c6e-9928-42c0-93a3-6ecd7e23f655")
+	)
+	(wire
+		(pts
+			(xy 30.48 24.13) (xy 25.4 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71309623-8cae-4cd5-a9f6-0f3854a461c7")
 	)
 	(wire
 		(pts
@@ -8059,6 +8085,73 @@
 			(project "Wakeboard"
 				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 30.48 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "43846299-b622-41a6-9980-696b7e70341f")
+		(property "Reference" "TP3"
+			(at 33.02 19.5579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 33.02 22.0979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 35.56 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "VBUS"
+			(at 30.48 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c107f5e-fbf6-4a44-b2fb-6b2afe09ea0c")
+		)
+		(instances
+			(project "Wakeboard"
+				(path "/5eaee857-86a0-4093-a821-4f3b8843739e"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
