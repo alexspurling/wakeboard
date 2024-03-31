@@ -13,6 +13,7 @@ All files are open source under the Apache Licence 2.0
 ![WakeboardSchema.pdf](WakeboardSchema.svg)
 
 
+![](WakeboardPhoto.jpg)
 
 ## Instructions for adding components
 
